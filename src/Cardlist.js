@@ -15,3 +15,5 @@ export default function Cardlist({ robots }) {
   });
   return <div>{cardComponent}</div>;
 }
+
+//pure components:- receives an input and then always return same output.

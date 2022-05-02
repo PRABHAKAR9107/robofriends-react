@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 h1 {
-  font-size: 72px;
+  font-family: "Lobster", cursive;
   background: -webkit-linear-gradient(#743ad5, #d53a9d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.head {
+  border-bottom: 1px solid #238b99;
+  border-radius: 2px;
+  border-width: 5px;
 }
