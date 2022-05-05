@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 
-import Cardlist from "./Cardlist";
-import { robots } from "./robots";
+import CardList from "../components/CardList";
+import { robots } from "../components/robots";
 
-import Searchbar from "./Searchbar";
+import Searchbar from "../components/Searchbar";
+
+import Scroll from "../components/Scroll";
 import "./App.css";
 
 export default class App extends Component {
@@ -42,15 +44,15 @@ export default class App extends Component {
       return <h1>Loading</h1>;
     } else {
       return (
-        <div>
-          <div className="tc head ">
+        <div className="tc">
+          <div className=" head ">
             <h1 className="f1">Robofriends</h1>
 
             <Searchbar searchChange={this.onsearchChange} />
           </div>
-          <div className="tc">
-            <Cardlist robots={filteredRobots} />
-          </div>
+          <Scroll>
+            <CardList robots={filteredRobots} />
+          </Scroll>
         </div>
       );
     }
