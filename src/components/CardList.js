@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "./Card";
 
-export default function Cardlist({ robots }) {
+export default function CardList({ robots }) {
   const cardComponent = robots.map((user, i) => {
     return (
       <Card
